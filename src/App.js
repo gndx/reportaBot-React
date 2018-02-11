@@ -23,8 +23,8 @@ class App extends Component {
   render() {
     return (
       <div className="main">
-        <Header reports={this.state.reports} />
-        <ShowMap />
+        <Header />
+        <ShowMap reports={this.state.reports} />
       </div>
     );
   }
