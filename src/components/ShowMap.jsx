@@ -7,7 +7,7 @@ const MapWithAMarker = withScriptjs(withGoogleMap((props) =>
         defaultCenter={{ lat: 20.6698553, lng: -103.3824093 }}
     >
       {props.reportes.map((report) =>
-        <Marker key={report.numReport} icon={`http://s3.amazonaws.com/chewiekie/img/${report.type}.png`} position={{ lat: report.lat, lng: report.long }} />
+        <Marker key={report.numReport} icon={`https://s3.amazonaws.com/chewiekie/img/${report.type}.png`} position={{ lat: report.lat, lng: report.long }} />
       )}
     </GoogleMap>
 ));

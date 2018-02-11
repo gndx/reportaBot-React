@@ -21,7 +21,7 @@ class HowTo extends Component {
           </div>
           <div className="col-sm-4">
             <div className="card">
-              <img src="http://s3.amazonaws.com/chewiekie/img/search-reportaBot.jpg" width="100%" alt=""/>
+              <img src="https://s3.amazonaws.com/chewiekie/img/search-reportaBot.jpg" width="100%" alt=""/>
               <br/>
               <div className="content">
                 <div className="head">
@@ -35,7 +35,7 @@ class HowTo extends Component {
           </div>
           <div className="col-sm-4">
             <div className="card">
-              <img src="http://s3.amazonaws.com/chewiekie/img/location-reportaBot.jpg" width="100%" alt="" />
+              <img src="https://s3.amazonaws.com/chewiekie/img/location-reportaBot.jpg" width="100%" alt="" />
               <div className="content">
                 <div className="head">
                   <div className="htitle">
@@ -48,7 +48,7 @@ class HowTo extends Component {
           </div>
           <div className="col-sm-4">
             <div className="card">
-              <img src="http://s3.amazonaws.com/chewiekie/img/report-reportaBot.jpg" width="100%" alt="" />
+              <img src="https://s3.amazonaws.com/chewiekie/img/report-reportaBot.jpg" width="100%" alt="" />
               <div className="content">
                 <div className="head">
                   <div className="htitle">
