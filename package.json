@@ -18,9 +18,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gndx/reportaBot.git"
-  },  
+  },
   "bugs": {
     "url": "https://github.com/gndx/reportaBot/issues"
   },
-  "homepage": "https://github.com/gndx/reportaBot#readme"
+  "homepage": "https://github.com/gndx/reportaBot#readme",
+  "devDependencies": {
+    "nib": "^1.1.2"
+  }
 }
