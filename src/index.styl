@@ -12,91 +12,10 @@ html
     height 100% !important
 .main
   height 100% !important
-Header
-  background url('http://s3.amazonaws.com/chewiekie/img/chewiekie-bg-macbook.jpeg') center center no-repeat 
-  background-size cover
-  min-height 800px
-  z-index -9999
-  &:before
-    content ''
-    position absolute
-    top 0
-    right 0
-    bottom 0
-    left 0
-    background-image: radial-gradient(circle,pink,black)
-    opacity .6
-  .content
-    padding-top 25px
-    color white
-    .logo
-      h1
-        display inline-block
-        font-size 20px
-        padding 7px 0px
-        text-transform uppercase
-        letter-spacing 1.2px
-        font-weight 300
-        font-family 'Lato', sans-serif
-    .nav
-      a
-        color white
-        transition all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
-        text-transform uppercase
-        font-weight 200
-        letter-spacing 1.1px
-        font-size 13px
-        &:hover           
-          transform scale(1.1)
-          color rgba(white,0.8) 
-  .hero
-    font-family 'Lato', sans-serif
-    color white
-    h2
-      margin-top 20vh
-      font-size 78px
-      font-weight 300
-      span 
-        display block
-        font-size 70px
-        font-weight 500
-    p 
-      font-size 19px
-      font-weight 200 
-      width 35%
-      margin 5px 0px 30px 0px
-    .btn-contact
-      background-color white
-      cursor pointer
-      padding 20px 45px 
-      border 1px solid white
-      color black
-      font-weight 200
-      text-transform uppercase
-      font-size 12px
-      font-weight 600
-      border-radius 30px
-      letter-spacing 1.5px
-      transition all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
-      box-shadow 0 1px 2px 0 rgba(0,0,0,0.03)
-      outline none
-      &:hover 
-        background-color rgba(white,0.8)
-        transform scale(1.03)
-        color rgba(black,0.8)
-        text-decoration: none
-  svg 
-    position absolute
-    padding-bottom 0
-    margin-top 0
-    fill #fff
-    stroke #fff
-    bottom 0px
-
 #portfolio
   min-height 400px
-  padding-top 80px
-  padding-bottom 120px
+  padding-top 40px
+  padding-bottom 20px
   font-family 'Open Sans', sans-serif
   a  
     color pink
@@ -109,9 +28,15 @@ Header
     font-weight 300
     font-size 50px
     margin-bottom 0px
+    margin-top 0px
+  h4
+    margin-top 42px
+    float right
+    font-size 28px
   p
     color spacetext
     font-weight 300
+    margin-bottom 0px
   .card
     margin-bottom 40px
     background #f9fbfd
@@ -176,113 +101,6 @@ Header
         img 
           width 140px
 
-#about
-  background-color white
-  color space
-  padding-top 220px
-  padding-bottom 220px
-  font-family 'Open Sans', sans-serif
-  h2 
-    margin-top 80px
-    padding-top 0px
-    font-size 50px
-    font-weight 300
-  .box
-    text-align center
-    margin-bottom 40px
-    svg 
-      font-size 40px
-      margin 20px 0 20px 0px
-      color pink
-    h3 
-      font-size 22px
-    p 
-      font-weight 300
-      width 75%
-      margin 0 auto
-
-#technology
-  position relative
-  background-color #f5f7fa
-  color space
-  padding-top 100px
-  padding-bottom 100px
-  font-family 'Open Sans', sans-serif;
-  svg 
-    position absolute
-    padding-top 0
-    margin-bottom 0
-    fill #fff
-    top 0px
-  h2
-    font-size 42px
-    padding-top 120px
-    text-transform uppercase
-    text-align center
-  p
-    font-weight 300 
-    font-size 16px
-    text-align center
-    margin-bottom 40px
-    color spacetext
-  ul 
-    list-style none
-    margin 0
-    padding 0
-    text-align center
-    li 
-      display inline-block 
-      margin 0px 20px
-      svg 
-        position relative !important
-        font-size 30px !important
-        color space
-
-#contact
-  font-family 'Open Sans', sans-serif
-  position relative
-  min-height 600px
-  .contact-form
-    background #f9fbfd
-    border 1px solid #dee5ec
-    box-shadow 0 1px 2px 0 rgba(0,0,0,.03)
-    width 500px
-    z-index 9999
-    padding 25px
-    min-height 340px
-    margin 40px 40px 0px 40px
-    border-radius 8px
-    border 1px solid rgba(space,.4)
-    right 180px
-    position absolute
-    h2 
-      font-size 28px
-      font-weight 400
-    p 
-      font-weight 300
-    .form-control
-      border 1px solid rgba(125,125,125,0.2)
-      box-shadow 0 2px 5px 0 rgba(0,0,0,0.1)
-      outline 0
-      height 48px
-      border-radius 4px
-      font-size 14px 
-      font-weight 300
-    textarea
-      height 120px !important
-    button 
-      background-color pink
-      border 1px solid rgba(pink,0.8)
-      font-weight 300
-      padding 10px 24px !important
-  #map 
-    height 600px
-    width 125%
-    right 0%
-    overflow hidden
-    position absolute
-    background-color grey
-    z-index 9998
 footer 
   padding 20px 
   border-top 1px solid rgba(space,0.2)
@@ -295,50 +113,11 @@ footer
   nav 
     display inline-block      
     float right  
-  svg 
-    font-size 20px !important
-  .facebook
-    color #3b5998  
-  .twitter
-    color #326ada
-  .instagram 
-    color #cd486b
-  .github 
-    color space
+    a 
+      font-size 14px 
+      font-weight: 300
 
 @media (max-width: 676px)
-  header
-    .logo
-      text-align center
-    .nav 
-      margin 0 auto
-      text-align center
-    svg 
-      display none
-    .hero 
-      text-align center
-      h2 
-        margin-top 12vh
-        font-size 44px
-        span 
-          font-size 40px
-      p 
-        width 80%
-        margin 0 auto
-        font-size 16px
-        padding-bottom 40px
-    .btn-contact
-      padding 12px 35px
-    .nav-link 
-      padding .5rem .5rem
-  #about
-    padding-top 40px 
-    padding-bottom 40px
-    h2 
-      margin-top 0px 
-      font-size 34px
-      text-align center
-      margin-bottom 60px
   #portfolio 
     padding 40px 0px
     h2 
@@ -359,39 +138,6 @@ footer
         li  
           img 
             width 80px
-  #technology
-    padding 80px 0px
-    h2 
-      font-size 36px
-    p 
-      width 80% 
-      margin 0 auto
-      padding-bottom 30px
-    ul 
-      li
-        margin 0px 10px
-        svg 
-          font-size 26px !important
-  #contact 
-    #map 
-      width 100%
-    .contact-form 
-      margin-top 60px
-      right 0
-      width 300px
-      h2 
-        font-size 20px
-      p 
-        font-size 14px
-      .form-control 
-        height 38px
-      textarea
-        height 80px !important
-      button 
-        padding 10px 18px !important
-        display block
-        width 100%
-        font-size 14px
   footer 
     h4 
       display inline-block
