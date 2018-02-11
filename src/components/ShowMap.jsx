@@ -14,8 +14,18 @@ const MapWithAMarker = withScriptjs(withGoogleMap((props) =>
 
 class ShowMap extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      animal: null, 
+      bump: null,
+      luminary: null
+    };
+  }
+
     render() {
         const { reports } = this.props;
+        console.log()
         return (
             <div className='innerMap'>
                 <MapWithAMarker

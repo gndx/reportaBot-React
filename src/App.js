@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
+import Howto from './components/HowTo';
 import ShowMap from './components/ShowMap';
+import Footer from './components/Footer';
 import firebaseConf from './Firebase';
 class App extends Component {
 
@@ -23,8 +24,9 @@ class App extends Component {
   render() {
     return (
       <div className="main">
-        <Header />
         <ShowMap reports={this.state.reports} />
+        <Howto />
+        <Footer />
       </div>
     );
   }
