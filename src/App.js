@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/Header';
+import ShowMap from './components/ShowMap';
+import firebaseConf from './Firebase';
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      reports: []
+    };
+  }
+
+  async componentWillMount() {
+    let formRef = firebaseConf.database().ref('data').orderByKey().limitToLast(6);
+    await formRef.on('child_added', snapshot => {
+      const { lat, long, numReport, type, userId } = snapshot.val();
+      const data = { lat, long, numReport, type, userId};
+      this.setState({ reports: [data].concat(this.state.reports) });
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="main">
+        <Header reports={this.state.reports} />
+        <ShowMap />
       </div>
     );
   }
