@@ -29,7 +29,7 @@ class ShowMap extends Component {
         return (
             <div className='innerMap'>
                 <MapWithAMarker
-                    googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places'
+                    googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyCmjvkXB_DMnBUNwxQztLMStyQmA_szbNw&v=3.exp&libraries=geometry,drawing,places'
                     loadingElement={<div style={{ height: `100%` }} />}
                     containerElement={<div className='responsiveMap' style={{ height: `670px` }} />}
                     mapElement={<div style={{ height: `100%` }} />}
