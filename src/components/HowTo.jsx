@@ -12,7 +12,7 @@ class HowTo extends Component {
             <br/><br/>
           </div>
           <div className="col-sm-6">
-            <h4>🐶 3 🚧 3 💡 2 🚦 20</h4>
+            <h4>🐶 3 🚧 3 💡 2 🚦 0</h4>
           </div>
           <div className="col-sm-12">
           <h3>¿Comó Reportar una Incidencia?</h3>
@@ -35,7 +35,7 @@ class HowTo extends Component {
           </div>
           <div className="col-sm-4">
             <div className="card">
-              <img src="https://s3.amazonaws.com/chewiekie/img/location-reportaBot.jpg" width="100%" alt="" />
+              <img src="https://s3.amazonaws.com/chewiekie/img/report-reportaBot.jpg" width="100%" alt="" />
               <div className="content">
                 <div className="head">
                   <div className="htitle">
@@ -48,7 +48,7 @@ class HowTo extends Component {
           </div>
           <div className="col-sm-4">
             <div className="card">
-              <img src="https://s3.amazonaws.com/chewiekie/img/report-reportaBot.jpg" width="100%" alt="" />
+              <img src="https://s3.amazonaws.com/chewiekie/img/location-reportaBot.jpg" width="100%" alt="" />
               <div className="content">
                 <div className="head">
                   <div className="htitle">

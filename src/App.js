@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   async componentWillMount() {
-    let formRef = firebaseConf.database().ref('data').orderByKey().limitToLast(6);
+    let formRef = firebaseConf.database().ref('data').orderByKey().limitToLast(25);
     await formRef.on('child_added', snapshot => {
       const { lat, long, numReport, type, userId } = snapshot.val();
       const data = { lat, long, numReport, type, userId};
